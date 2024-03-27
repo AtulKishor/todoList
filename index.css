@@ -1,0 +1,88 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009c1f;
+    background-image: url("https://transparenttextures.com/patterns/flowers.png");
+    font-family: "Montserrat", sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 5px 5px grey;
+}
+
+.card * {
+    font-size: 1.3rem;
+    background: transparent;
+    border: none;
+    margin: 10px;
+}
+
+.card button {
+    width: 1.8rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card .note {
+    box-shadow: 0px 3px 3px 5px grey;
+}
+
+#note-list {
+    list-style: none;
+}
+
+#note-list li{
+    margin-left: -25px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3px blue;
+    transition: background-color 1s;
+    button{
+        visibility: hidden;
+        transition: visibilty 0.7s;
+    }
+}
+#note-list li:hover{
+    button{
+        visibility: unset;
+    }
+}
+
+
+.checked {
+    background-color: chartreuse;
+}
+
+.hide {
+    position: absolute;
+    top: -350px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid grey;
+}
+
+#footer * {
+    font-size: small;
+    color: gray;
+}
+
+.tabs {
+    cursor: pointer;
+    margin: 0px;
+}
+
+.tabs:hover {
+background-color: #f0f0f0;
+}
